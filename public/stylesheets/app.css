@@ -1,13 +1,9 @@
-header {
-    background-color: #244752;
-    color: #E8FDFF;
-}
 body {
-    background-color: whitesmoke;
-    font-family: Monserrat, sans-serif;
+    background-color: #DBEDF3;
 }
+
 main {
-    background-color: white;
+    background-color: #DBEDF3;
     padding: 16px;
 }
 .finstagram-post {

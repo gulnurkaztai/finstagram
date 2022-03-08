@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -5,13 +6,77 @@
 body, input {
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
-  color: #244751;
+  color: #283149;
 }
 
-a {
-  color: #8da7b8;
+.navbar a {
+  color: #DBEDF3;
+  text-decoration: none;
+  text-align: center;
+  margin: 15%;
+}
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #283149;
+  padding: 20px;
+  box-shadow: #283149;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar li {
+  margin: 0 15px;
+  font-weight: bold;
+
+}
+.navbar a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Buttons */
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 7px 22px 7px 10px;
+  border-radius: 50px;
+  border: 1px solid #DBEDF3;
   text-decoration: none;
 }
+
+.btn-dark {
+  background-color: #404B69;
+
+}
+.btn-light-outline a {
+  color: #404B69;
+}
+.btn-light-outline a:hover {
+  color: #404B69;
+}
+.btn-light-outline:hover {
+background-color: #DBEDF3;
+}
+
+.btn-dark:hover {
+  color: white;
+}   
+
+.btn-dark a:hover {
+  color: white;
+}   
+
 
 label {
   display: block;
@@ -19,19 +84,18 @@ label {
 }
 
 input[type=text], input[type=password], input[type=email] {
-  border: solid 1px #244751;
+  border: solid 1px #E8E8CC;
   padding: .5em;
   width: 200px;
   font-size: 1em;
 }
 
-header {
-  overflow: hidden;
+nav {
   display: flex;
   align-items: baseline;
 }
 
-header > .login-info {
+nav > .login-info {
   margin-left: auto;
 }
 
@@ -63,7 +127,18 @@ main {
 .finstagram-post > * {
   margin-bottom: 1em;
 }
+.new-finstagram-post .button{
+  background-color: #DBEDF3;
+}
 
+.new-finstagram-post .button:hover{
+  background-color: whitesmoke;
+}
+.new-finstagram-post a {
+  text-decoration: none;
+  color: #244751;
+
+}
 .user-info {
   display: flex;
   align-items: baseline;

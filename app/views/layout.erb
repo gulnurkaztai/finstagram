@@ -5,21 +5,25 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,700italic,700,300">
     <link rel="stylesheet" type="text/css" href="/stylesheets/lib.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
-    <title>Finstagram</title>
+    <title>Blueberry</title>
   </head>
   <body>
-    <header>
-    <h1><a href="/">Finstagram</a></h1>
+  <nav class="navbar">
+  
+    <h1><a href="/">Blueberry</a></h1>
       <div class="login-info">
         <% if current_user %>
           <%= current_user.username %>
-          <a href="/logout">Logout</a>
+          <ul class="navbar-nav-right">
+           <li><button class="btn btn-dark"><a href="/logout">Logout</a></button></li>
+          </ul>
         <% else %>
-          <a href="/login">Login</a>
-          <a href="/signup">Signup</a>
+        <ul class="navbar-nav-right">
+         <li><button class="btn btn-light-outline"><a href="/login">Login</a></button></li>
+         <li><button class="btn btn-dark"><a href="/signup">Signup</a></button></li>
+        </ul>
         <% end %>
-      </div>
-    </header>
+  </nav>
     <main role="main">
       <%= yield %>
     </main>
